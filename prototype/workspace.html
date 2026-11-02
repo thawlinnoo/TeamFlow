@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeamFlow | Create Workspace</title>
+</head>
+<body>
+    <header>
+        <p>TeamFlow</p>
+    </header>
+
+    <main>
+        <h1>Create Workspace</h1>
+        <p>Create a workspace where your team can collaborate on projects.</p>
+
+        <form method="post">
+            <div>
+                <label for="workspace-name">Workspace Name</label>
+                <input type="text" id="workspace-name" name="workspace_name" required>
+            </div>
+
+            <div>
+                <label for="description">Description</label>
+                <textarea id="description" name="description" rows="4"></textarea>
+            </div>
+
+            <fieldset>
+                <legend>Visibility</legend>
+
+                <div>
+                    <input type="radio" id="visibility-private" name="visibility" value="private" required>
+                    <label for="visibility-private">Private</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="visibility-public" name="visibility" value="public" required>
+                    <label for="visibility-public">Public</label>
+                </div>
+            </fieldset>
+
+            <button type="submit">Create Workspace</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>TeamFlow Workspace management prototype.</p>
+    </footer>
+</body>
+</html>

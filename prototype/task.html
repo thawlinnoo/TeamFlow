@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeamFlow | Create Task</title>
+</head>
+<body>
+    <header>
+        <p>TeamFlow</p>
+    </header>
+
+    <main>
+        <h1>Create New Task</h1>
+        <p>Enter the task details to add a new task to your project.</p>
+
+        <form method="post">
+            <div>
+                <label for="task-title">Task Title</label>
+                <input type="text" id="task-title" name="task_title" required>
+            </div>
+
+            <div>
+                <label for="description">Description</label>
+                <textarea id="description" name="description" rows="4"></textarea>
+            </div>
+
+            <div>
+                <label for="priority">Priority</label>
+                <select id="priority" name="priority" required>
+                    <option value="" disabled selected>Choose priority</option>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="status">Status</label>
+                <select id="status" name="status" required>
+                    <option value="" disabled selected>Choose status</option>
+                    <option value="to_do">To Do</option>
+                    <option value="in_progress">In Progress</option>
+                    <option value="done">Done</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="due-date">Due Date</label>
+                <input type="date" id="due-date" name="due_date">
+            </div>
+
+            <button type="submit">Create Task</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>TeamFlow task management prototype.</p>
+    </footer>
+</body>
+</html>
