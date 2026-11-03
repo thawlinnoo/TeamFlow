@@ -21,7 +21,7 @@ npm install
 npm run dev
 ```
 
-Open the board page at [http://localhost:5173/board.html].
+Open the board page at [Open the TeamFlow board](http://localhost:5173/board.html).
 
 Keep the terminal running while using the prototype. Press `Ctrl+C` to stop the server.
 If Vite uses a different port, use the URL shown in the terminal and add `/board.html`.
