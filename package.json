@@ -1,0 +1,23 @@
+{
+  "name": "teamflow",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "vite prototype"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thawlinnoo/TeamFlow.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/thawlinnoo/TeamFlow/issues"
+  },
+  "homepage": "https://github.com/thawlinnoo/TeamFlow#readme",
+  "devDependencies": {
+    "vite": "^8.3.5"
+  }
+}
