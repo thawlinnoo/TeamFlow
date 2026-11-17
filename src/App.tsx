@@ -67,7 +67,7 @@ function App() {
       <h1>TeamFlow</h1>
       <p>Collaborate and manage your tasks.</p>
 
-      <button type="button" onClick={handleClick}>
+      <button type="button" onClick={handleClick} aria-pressed={isFilter}>
         High Priority only
       </button>
 

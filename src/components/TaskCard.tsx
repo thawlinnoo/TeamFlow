@@ -13,20 +13,19 @@ type TaskCardProps = {
 };
 
 export function TaskCard({ task, onMoveTask, viewTaskDetails }: TaskCardProps) {
+  const nextStatus: TaskStatus =
+    task.status === 'To Do' ? 'In Progress' :
+    task.status === 'In Progress' ? 'Done' : 'To Do';
+
   return (
     <div className="task-card">
       <h3>{task.title}</h3>
       <p>{task.priority}</p>
       <button
         type="button"
-        onClick={() => onMoveTask(
-          task.id,
-          task.status === 'To Do' ? 'In Progress' :
-          task.status === 'In Progress' ? 'Done' : 'To Do'
-        )}
+        onClick={() => onMoveTask(task.id, nextStatus)}
       >
-        Move to {task.status === 'To Do' ? 'In Progress' :
-          task.status === 'In Progress' ? 'Done' : 'To Do'}
+        Move to {nextStatus}
       </button>
 
       <button type="button" onClick={()=> viewTaskDetails(task.id)}>
